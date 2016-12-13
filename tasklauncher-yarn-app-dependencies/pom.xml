@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tasklauncher-yarn-app-dependencies</artifactId>
-    <version>1.1.0.BUILD-SNAPSHOT</version>
+    <version>1.1.1.RELEASE</version>
     <packaging>pom</packaging>
     <name>tasklauncher-yarn-app-dependencies</name>
     <description>Spring Cloud Stream tasklauncher yarn App Dependencies</description>
@@ -11,7 +11,7 @@
     <parent>
         <groupId>org.springframework.cloud.stream.app</groupId>
         <artifactId>app-starters-core-dependencies</artifactId>
-        <version>1.1.1.BUILD-SNAPSHOT</version>
+        <version>1.1.1.RELEASE</version>
     </parent>
 
     <properties>
@@ -24,7 +24,7 @@
             <dependency>
                 <groupId>org.springframework.cloud.stream.app</groupId>
                 <artifactId>spring-cloud-starter-stream-sink-task-launcher-yarn</artifactId>
-                <version>1.1.0.BUILD-SNAPSHOT</version>
+                <version>1.1.1.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
