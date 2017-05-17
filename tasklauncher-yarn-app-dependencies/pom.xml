@@ -16,8 +16,8 @@
     </parent>
 
     <properties>
-        <spring-cloud-deployer-yarn.version>1.0.1.RELEASE</spring-cloud-deployer-yarn.version>
-        <spring.cloud.task.version>1.0.1.RELEASE</spring.cloud.task.version>
+        <spring-cloud-deployer-yarn.version>1.2.0.RELEASE</spring-cloud-deployer-yarn.version>
+        <spring.cloud.task.version>1.2.0.RELEASE</spring.cloud.task.version>
     </properties>
 
     <dependencyManagement>
