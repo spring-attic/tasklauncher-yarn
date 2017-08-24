@@ -6,6 +6,22 @@ in the message that is received.
 
 Any message that does not contain a `TaskLaunchRequest` will log an error.
 
+== Input
+
+=== Headers:
+
+* `Content-Type: application/octet-stream`
+
+=== Payload:
+
+A  byte array containing the `TaskLaunchRequest`
+
+NOTE: The `TaskLaunchRequest` contains the URI of the task jar, the command line arguments, and properties required for the task launch.
+
+== Output
+
+N/A 
+
 == Using the TaskLauncher
 A tasklauncher is a sink that consumes a `TaskLaunchRequest` message, deploys and launches a task using a Spring
 Cloud Deployer.  The task will use the --uri from the message to determine what artifact to deploy as well as the
@@ -24,5 +40,17 @@ Currently `tasklauncher-yarn` sink only works on Dataflow for Apache Yarn and ya
 == Build
 
 ```
-$ mvn clean package
+$ ./mvnw clean install -PgenerateApps
+$ cd apps
+```
+You can find the corresponding binder based projects here. You can then cd into one one of the folders and
+build it:
+```
+$ ./mvnw clean package
+```
+
+=== Examples
+
+```
+java -jar task-launcher-yarn.jar
 ```
