@@ -35,8 +35,6 @@ would be sent to the tasklauncher sink.
 == Limitations
 Currently `tasklauncher-yarn` sink only works on Dataflow for Apache Yarn and yarn deployer version in this sink has to match same version used in a dataflow server.
 
-//end::ref-doc[]
-
 == Build
 
 ```
@@ -54,3 +52,4 @@ $ ./mvnw clean package
 ```
 java -jar task-launcher-yarn.jar
 ```
+//end::ref-doc[]
